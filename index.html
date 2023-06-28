@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="memeGenerator.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+        <div class="buttonContainer">
+            <button><i class="fa-regular fa-image"></i> Image</button>
+            <button><i class="fa-solid fa-font"></i> Text</button>
+            <button><i class="fa-regular fa-lightbulb"></i> Ligth Mode</button>
+        </div>
+    </header>
+    <main>
+        <img alt="meme picture">
+    </main>
+    <aside class="imageOptions">
+        <h3>Image</h3>
+        <div class="url">
+            <p>url</p>
+            <input type="url">
+        </div>
+        <div class="background">
+            <p>background</p>
+            <input type="color"><select>
+                <option>a</option>
+                <option>b</option>
+            </select>
+        </div>
+        <div class="effects">
+            <p>filters</p>
+            <label for="brigth">Brightness</label>
+            <input type="range">
+            <label for="opacity">Opacity</label>
+            <input type="range">
+            <label for="contrast">Contrast</label>
+            <input type="range">
+            <label for="blur">Blur</label>
+            <input type="range">
+            <label for="sepia">Sepia</label>
+            <input type="range">
+            <label for="hue">Hue</label>
+            <input type="range">
+            <label for="saturation">Saturation</label>
+            <input type="range">
+            <label for="negative">Negative</label>
+            <input type="range">
+        </div>
+        <button><input type="reset"></button>
+    </aside>
+    <aside class="textOptions">
+        <h3>Text</h3>
+        <div class="firstText">
+            <p>top text</p>
+            <input type="text">
+            <input type="checkbox">without top text
+        </div>
+        <div class="secondText">
+            <p>bottom text</p>
+            <input type="text">
+            <input type="checkbox">Without bottom text
+        </div>
+        <div class="font">
+            <p>font</p>
+            <select>
+                <option>a</option>
+                <option>b</option>
+            </select>
+            <div class="sizeAndAlign">
+                <input type="number">
+                <button><i class="fa-solid fa-align-left"></i></button>
+                <button><i class="fa-solid fa-align-justify"></i></button>
+                <button><i class="fa-solid fa-align-right"></i></button>
+            </div>
+        </div>
+        <div class="colorsElections">
+            <div class="colorText">
+                <p>color</p>
+                <input type="color">
+            </div>
+            <div class="backgroundColorText">
+                <p>background</p>
+                <input type="color">
+            </div>
+            <input type="checkbox">clear background
+        </div>
+        <div class="outlineText">
+            <p>outline</p>
+            <div class="outlineOptions">
+                <button>None</button>
+                <button>Ligth</button>
+                <button>Dark</button>
+            </div>
+        </div>
+        <div class="textMargin">
+            <p>margin</p>
+            <input type="number">
+        </div>
+        <div class="leading">
+            <p>leading</p>
+            <input type="number">
+        </div>
+
+    </aside>
+</body>
+</html>
