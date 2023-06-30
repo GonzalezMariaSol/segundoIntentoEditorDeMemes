@@ -1,9 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    background-color: #30343f;
+    color: white;
 }
 header{
-    background-color: blue;
+    background-color: #181e2a;
     margin-top: -1.65vw;
     height: 19vh;
 }
@@ -12,7 +15,6 @@ h1{
     padding-top: 1vw;
 }
 .buttonContainer{
-    background-color: tan;
     height: 6vh;
     width: 27%;
     margin-left: 36.5vw;
@@ -20,37 +22,140 @@ h1{
     justify-content: space-around;
 }
 .buttonContainer button{
-    background-color: darkcyan;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+}
+.buttonContainer button:hover{
+    background-color: rgb(163, 162, 162);
+    border-style: none;
+    border-radius: 5px;
+}
+button{
+    cursor:pointer;
 }
 main{
-    background-color: darkblue;
-    display: flex;
+    background-color: #181e2a;
     justify-content: center;
     margin-left: 30vw;
     width: 40%;
-    height: 70vh;   
+    height: 68vh;   
 }
 .text{
-    background-color: seagreen;
+    background-color: white;
     width: 100%;
     height: 10vh;
 }
 main .top{
-    margin-top: -0.1%;
+    margin-bottom: 1vh;
 }
 main .bottom{
-    margin-top: 60vh;
+    margin-top: 0vh;
 }
 .memeContainer{
-    background-color: rgb(162, 201, 236);
+    background-color: black;
     height: 50vh;
     width: 100%;
+    margin-top: -2.5vh;
     align-self: center;
 }
 .downloadPictureButton{
-    background-color: salmon;
+    background-color: rgb(55, 165, 55);
     margin-left: 46vw;
     margin-top: 2vw;
+    border-style: none;
+    border-radius: 5px;
+    height: 3vh;
+}
+
+/*ASIDE DE FOTOS*/
+.imageOptions, .textOptions{
+    background-color: #252935;
+    width: 40vh;
+    /* height: 100%; */ /*PORQUE NO ME LO TOMA!? */
+    height: 100vh;
+    margin-left: 75vw;
+    margin-top: -47vw;
+    padding-top: 5vh;
+    overflow-y: scroll;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.imageOptions h3, .textOptions h3{
+    text-align: center;
+    height: 10vh;
+    margin-top: 5vh;
+    font-size: 2vw;
+    line-height: 10vh;
+}
+.url , .background , .effects, .effects label, .effects input, .firstText, .secondText, .font, .colorsElections, .outlineText, .textMargin, .leading{
+    padding-bottom: 1vh;
+}
+.url input, .firstText input, .secondText input{
+    width:96%;
+}
+.background input{
+    width: 45%;
+}
+.background select{
+    width: 45%;
+    margin-left: 3vh;
+    height: 2.6vh;
+}
+.effects input, .font select{
+    width: 100%;
+}
+.imageOptions button{
+    background-color: #393e4a;
+    margin-top: 3vh;
+    width: 90%;
+    align-self: center;
+    border-radius: 5px;
+    border-style: none;
+}
+.imageOptions button input{
+    background-color: #393e4a;
+    height: 4vh;
+    width: 30%;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+
+/*ASIDE DE TEXTO*/
+.sizeAndAlign{
+    padding-top: 1vh;
+}
+.sizeAndAlign input{
+    width: 45%;
+}
+.sizeAndAlign button{
+    background-color: yellow;
+    margin-left: 0.3vw;
+}
+.colorsElections{
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: row;
+}
+.colorText, .backgroundColorText{
+    width: 45%;
+    border-radius:8px;
+    border-style: none;
+    text-align: center;
+}
+.backgroundColorText{
+    margin-left: 4vh;
+}
+.outlineText{
+    background-color: rgb(74, 74, 40);
+}
+.outlineOptions{
+    background-color: yellow;
+    text-align: center;
 }
 
 
@@ -64,12 +169,3 @@ main .bottom{
 
 
 
-
-
-/* aside{
-    background-color: saddlebrown;
-    width: 17em;
-    margin-left:60em;
-    margin-top: -37.12em;
-    height: 36em;
-} */
