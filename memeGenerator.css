@@ -93,7 +93,7 @@ main .bottom{
 .url , .background , .effects, .effects label, .effects input, .firstText, .secondText, .font, .colorsElections, .outlineText, .textMargin, .leading{
     padding-bottom: 1vh;
 }
-.url input, .firstText input, .secondText input{
+.url input, .firstText input, .secondText input, .textMargin input, .leading input{
     width:96%;
 }
 .background input{
@@ -135,9 +135,10 @@ main .bottom{
 .sizeAndAlign button{
     background-color: yellow;
     margin-left: 0.3vw;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .colorsElections{
-    background-color: rebeccapurple;
     display: flex;
     flex-direction: row;
 }
@@ -147,15 +148,10 @@ main .bottom{
     border-style: none;
     text-align: center;
 }
-.backgroundColorText{
-    margin-left: 4vh;
-}
-.outlineText{
-    background-color: rgb(74, 74, 40);
-}
 .outlineOptions{
-    background-color: yellow;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 
