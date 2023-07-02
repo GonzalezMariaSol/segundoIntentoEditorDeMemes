@@ -61,12 +61,14 @@ main .bottom{
 }
 .downloadPictureButton{
     background-color: rgb(55, 165, 55);
+    color: white;
     margin-left: 46vw;
     margin-top: 2vw;
     border-style: none;
     border-radius: 5px;
     height: 3vh;
 }
+
 
 /*ASIDE DE FOTOS*/
 .imageOptions, .textOptions{
@@ -80,7 +82,6 @@ main .bottom{
     overflow-y: scroll;
     padding-left: 1vw;
     padding-right: 1vw;
-    display: flex;
     flex-direction: column;
 }
 .imageOptions h3, .textOptions h3{
@@ -94,7 +95,7 @@ main .bottom{
     padding-bottom: 1vh;
 }
 .url input, .firstText input, .secondText input, .textMargin input, .leading input{
-    width:96%;
+    width:100%;
 }
 .background input{
     width: 45%;
@@ -107,6 +108,7 @@ main .bottom{
 .effects input, .font select{
     width: 100%;
 }
+
 .imageOptions button{
     background-color: #393e4a;
     margin-top: 3vh;
@@ -115,7 +117,7 @@ main .bottom{
     border-radius: 5px;
     border-style: none;
 }
-.imageOptions button input{
+.imageOptions button input, .textOptions button input{
     background-color: #393e4a;
     height: 4vh;
     width: 30%;
@@ -126,6 +128,10 @@ main .bottom{
 
 
 /*ASIDE DE TEXTO*/
+.checkBox{
+    background-color: yellow;
+    color: red;
+}
 .sizeAndAlign{
     padding-top: 1vh;
 }
@@ -133,7 +139,6 @@ main .bottom{
     width: 45%;
 }
 .sizeAndAlign button{
-    background-color: yellow;
     margin-left: 0.3vw;
     flex-direction: column;
     justify-content: space-evenly;
@@ -154,8 +159,32 @@ main .bottom{
     justify-content: space-around;
 }
 
+input, select{
+    background-color: #3a3e49;
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+}
 
-
+input, select, button:hover{
+    background-color:  #505665;
+}
+select:hover{
+    background-color:  #505665;
+}
+button:hover{
+    background-color:  #505665;
+}
+input, select, button:focus{
+    outline: none;
+}
+.imageOptions button, .textOptions button{
+    background-color: #3a3e49;
+    border-style: none;
+    color: white;
+    padding: 1vh;
+    border-radius: 5px;
+}
 
 
 
