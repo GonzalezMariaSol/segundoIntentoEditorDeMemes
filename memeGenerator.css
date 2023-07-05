@@ -35,7 +35,6 @@ button{
     cursor:pointer;
 }
 main{
-    background-color: #181e2a;
     justify-content: center;
     margin-left: 30vw;
     width: 40%;
@@ -52,6 +51,10 @@ main .top{
 main .bottom{
     margin-top: 0vh;
 }
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
 .memeContainer{
     background-color: black;
     height: 50vh;
@@ -59,14 +62,15 @@ main .bottom{
     margin-top: -2.5vh;
     align-self: center;
 }
+
 .downloadPictureButton{
     background-color: rgb(55, 165, 55);
     color: white;
-    margin-left: 46vw;
-    margin-top: 2vw;
     border-style: none;
     border-radius: 5px;
     height: 3vh;
+    width: 40%;
+    margin-left: 26vh;
 }
 
 
@@ -75,10 +79,11 @@ main .bottom{
     background-color: #252935;
     width: 40vh;
     /* height: 100%; */ /*PORQUE NO ME LO TOMA!? */
-    height: 100vh;
+    height: 92vh;
     margin-left: 75vw;
-    margin-top: -47vw;
+    margin-top: -39vw;
     padding-top: 5vh;
+    padding-bottom: 2vh;
     overflow-y: scroll;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -128,6 +133,9 @@ main .bottom{
 
 
 /*ASIDE DE TEXTO*/
+.textOptions, .imageOptions{
+    display: none;
+}
 .checkBox{
     background-color: yellow;
     color: red;
@@ -187,8 +195,25 @@ input, select, button:focus{
 }
 
 
-
-
+/* MODO CLARO-OSCURO */
+.ligthModeBody{
+    color: #3f3f3f;
+    background-color: #eeeeee;
+}
+.ligthModeHeader{
+    background-color: #e0e0e0;
+}
+.ligthModeButtonContainer button:hover{
+    background-color: #cccccc;
+    border-style: none;
+    border-radius: 5px;
+}
+.ligthModeAsideImg{
+    background-color: white;
+}
+.ligthModeAsideText{
+    background-color: white;
+}
 
 
 

@@ -11,20 +11,20 @@
     <header>
         <h1>Meme Generator</h1>
         <div class="buttonContainer">
-            <button><i class="fa-regular fa-image"></i> Image</button>
-            <button><i class="fa-solid fa-font"></i> Text</button>
-            <button><i class="fa-regular fa-lightbulb"></i> Ligth Mode</button>
+            <button id="imageButton"><i class="fa-regular fa-image"></i> Image</button>
+            <button id="textButton"><i class="fa-solid fa-font"></i> Text</button>
+            <button id="ligthDarkMode"><i class="fa-regular fa-lightbulb"></i> Ligth Mode</button>
         </div>
     </header>
     <main>
-        <h2 class="text top">top</h2>
-        <div class="memeContainer">
-            <img alt="meme picture">
+        <div class="main-container" id="mainContainer">
+            <h2 class="text top">top</h2>
+            <div class="memeContainer"></div>
+            <h2 class="text bottom">bottom</h2>
+            <button class="downloadPictureButton">Download picture</button>
         </div>
-        <h2 class="text bottom">bottom</h2>
     </main>
-    <button class="downloadPictureButton">Download picture</button>
-    <aside class="imageOptions">
+    <aside class="imageOptions" id="imgOpt">
         <h3>IMAGE</h3>
         <div class="url">
             <p>URL</p>
@@ -39,26 +39,26 @@
         </div>
         <div class="effects">
             <p>FILTERS</p>
-            <label for="brigthFilter">BRIGHTNESS</label><br>
-            <input type="range" id="brigthFilter"><br>
-            <label for="opacityFilter">OPACITY</label><br>
-            <input type="range" id="opacityFilter"><br>
-            <label for="contrastFilter">CONTRAST</label><br>
-            <input type="range" id="contrastFilter"><br>
-            <label for="blurFilter">BLUR</label><br>
-            <input type="range" id="blurFilter"><br>
-            <label for="sepiaFilter">SEPIA</label><br>
-            <input type="range" id="sepiaFilter"><br>
-            <label for="hueFilter">HUE</label><br>
-            <input type="range" id="hueFilter"><br>
-            <label for="saturationFilter">SATURATION</label><br>
-            <input type="range" id="saturationFilter"><br>
-            <label for="negativeFilter">NEGATIVE</label><br>
-            <input type="range" id="negativeFilter"><br>
+            <label for="brigthInput">BRIGHTNESS</label><br>
+            <input type="range" id="brigthInput" min="0" max="1" value="1" step="0.1"><br>
+            <label for="opacityInput">OPACITY</label><br>
+            <input type="range" id="opacityInput" min="0" max="1" value="1" step="0.1"><br>
+            <label for="contrastInput">CONTRAST</label><br>
+            <input type="range" id="contrastInput" min="100" max="1000" value="100" step="1"><br>
+            <label for="blurInput">BLUR</label><br>
+            <input type="range" id="blurInput" min="0" max="10" value="0" step="0.1"><br>
+            <label for="sepiaInput">SEPIA</label><br>
+            <input type="range" id="sepiaInput" min="0" max="100" value="0" step="1"><br>
+            <label for="hueInput">HUE</label><br>
+            <input type="range" id="hueInput" min="" max="" value="" step=""><br>
+            <label for="saturationInput">SATURATION</label><br>
+            <input type="range" id="saturationInput" min="" max="" value="" step=""><br>
+            <label for="negativeInput">NEGATIVE</label><br>
+            <input type="range" id="negativeInput" min="" max="" value="" step=""><br>
         </div>
         <button><input type="reset"></button>
     </aside>
-    <!-- <aside class="textOptions">
+    <aside class="textOptions" id="textOpt">
         <h3>TEXT</h3>
         <div class="firstText">
             <p>TOP TEXT</p>
@@ -112,6 +112,7 @@
             <p>LEADING</p>
             <input type="number">
         </div>
-    </aside> -->
+    </aside>
+    <script src="script.js"></script>
 </body>
 </html>
