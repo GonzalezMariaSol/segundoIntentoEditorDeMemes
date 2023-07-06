@@ -132,10 +132,25 @@ main .bottom{
 
 
 
+
+
+
+
 /*ASIDE DE TEXTO*/
 .textOptions, .imageOptions{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
 .checkBox{
     background-color: yellow;
     color: red;
